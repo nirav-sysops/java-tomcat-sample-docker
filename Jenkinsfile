@@ -17,7 +17,7 @@ pipeline {
             steps {
             
                 bat "Dir"
-                bat "C:\Users\nsutaria\Desktop\Nirav\java-tomcat-sample-docker> docker build . t tomcatsamplewebapp:${env.BUILD_ID} C:\Users\nsutaria\Desktop\Nirav\java-tomcat-sample-docker"
+                bat "docker build .  -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
 
